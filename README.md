@@ -294,7 +294,7 @@ Use following Script
       stages{
         stage("Checkout"){
             steps{
-              git branch: 'maven-nexus', url: 'https://github.com/showmikb/eagles-batch-devops-projects.git'
+              git branch: 'main', url: 'https://github.com/lwersiy/ci-tutorial.git'
             }
         }
       }
@@ -315,7 +315,7 @@ pipeline {
   stages{
     stage("Checkout"){
         steps{
-          git branch: 'maven-nexus', url: 'https://github.com/showmikb/eagles-batch-devops-projects.git'
+          git branch: 'main', url: 'https://github.com/lwersiy/ci-tutorial.git'
         }
     }
 
@@ -346,7 +346,7 @@ pipeline {
     stages {
         stage("Checkout") {
             steps {
-                git branch: 'maven-nexus', url: 'https://github.com/showmikb/eagles-batch-devops-projects.git'
+                git branch: 'main', url: 'https://github.com/lwersiy/ci-tutorial.git'
             }
         }
 
@@ -383,7 +383,7 @@ pipeline {
     stages {
         stage("Checkout") {
             steps {
-                git branch: 'maven-nexus', url: 'https://github.com/showmikb/eagles-batch-devops-projects.git'
+                git branch: 'main', url: 'https://github.com/lwersiy/ci-tutorial.git'
             }
         }
 
@@ -434,7 +434,7 @@ pipeline {
         stages {
             stage("Checkout") {
                 steps {
-                    git branch: 'maven-nexus', url: 'https://github.com/showmikb/eagles-batch-devops-projects.git'
+                    git branch: 'main', url: 'https://github.com/lwersiy/ci-tutorial.git'
                 }
             }
     
@@ -498,7 +498,7 @@ pipeline {
     stages {
         stage("Checkout") {
             steps {
-                git branch: 'maven-nexus', url: 'https://github.com/showmikb/eagles-batch-devops-projects.git'
+                git branch: 'main', url: 'https://github.com/lwersiy/ci-tutorial.git'
             }
         }
 
@@ -550,8 +550,8 @@ pipeline {
                 dir('JavaWebApp') {
                     sh """mvn sonar:sonar \
                           -Dsonar.projectKey=JavaWebApplication \
-                          -Dsonar.host.url=http://3.110.171.226:9000 \
-                          -Dsonar.login=df3865db3dc59a7788c09e04fa03090c1e0c9f4f"""
+                          -Dsonar.host.url=http://54.226.168.124:9000 \
+                          -Dsonar.login=bc427de02aa8bf104c2c8f7a613eab9994a2f466"""
                 }
             }
         }
@@ -576,7 +576,7 @@ pipeline {
     stages {
         stage("Checkout") {
             steps {
-                git branch: 'maven-nexus', url: 'https://github.com/showmikb/eagles-batch-devops-projects.git'
+                git branch: 'main', url: 'https://github.com/lwersiy/ci-tutorial.git'
             }
         }
 
@@ -628,8 +628,8 @@ pipeline {
                 dir('JavaWebApp') {
                     sh """mvn sonar:sonar \
                           -Dsonar.projectKey=JavaWebApplication \
-                          -Dsonar.host.url=http://3.110.171.226:9000 \
-                          -Dsonar.login=df3865db3dc59a7788c09e04fa03090c1e0c9f4f"""
+                          -Dsonar.host.url=http://54.226.168.124:9000 \
+                          -Dsonar.login=bc427de02aa8bf104c2c8f7a613eab9994a2f466"""
                 }
             }
         }
